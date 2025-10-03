@@ -1,10 +1,14 @@
-## 🧠 Python Database X-AI ORM
-![Python Database X-AI ORM Logo](./assets/pyiadbliteorm_xz.jpg)
+### 🧠 DBXAIORM
+ORM Tools for supports severals SGBS and RDBMS with several features like criptografy, migrate, models, data analisys, blob files, migrate and csv for SQLite users.
 
-**Version:** 1.0 Beta  
+[![GitHub Repo]([[https://github.com/ssmool/DBXAIORM](https://github.com/ssmool/DBXAIORM)])  
+
+![DBXAIORM ORM Logo](./assets/pyormxaidatabase_md.png)
+
+**Version:** 4.0 Beta  
 **Status:** Under Development  
 **Author:** #asytrick  
-**Website:** [github.com/PY_DBXIA_ORM](https://github.com/ssmool/PY_DBXIA_ORM)  
+**Website:** [github.com/ssmool/DBXAIORM](https://github.com/ssmool/DBXAIORM)  
 **Contact:** eusmool@gmail.com  
 
 ##📌 Overview
