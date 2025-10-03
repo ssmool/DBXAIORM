@@ -1,9 +1,5 @@
-Here is a well-formatted `README.md` file for the GitHub repository [ssmool/DBXAIORM](https://github.com/ssmool/DBXAIORM), based on your script. It explains usage of the various modules (`orm`, `orm_ai`, `orm_migrate`, `html_log`, `criptografy`, `blob`, `analitics`, `mock`) with examples matching the functions in your script.
-
----
-
 ````markdown
-# DBXAIORM 📦🧠
+# 🧠 DBXAIORM
 
 A powerful, modular, SQLite3-based ORM and database manager built for simplicity, extensibility, and AI integration.
 
@@ -208,3 +204,4 @@ MIT License
 **[🚀 #asytrick](https://github.com/ssmool) - eusmool@gmail.com** – Building smarter databases with Python 🧠📊
 
 ```
+
