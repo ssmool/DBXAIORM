@@ -1,5 +1,5 @@
 ## HOW TO IMPORT LIBRARY MODDULES FROM DBXAIORM
-
+---
 import database_xaiorm.orm as ORM
 import database_xaiorm.orm_ai as AI
 import database_xaiorm.orm_migrate as MIGRATE
@@ -9,6 +9,7 @@ import database_xaiorm.blob as BLOB
 import database_xaiorm.analitics as ANALYTICS
 import database_xaiorm.mock as MOCK
 import os
+---
 
 ### BLOB:TO CREATE BLOB DATA INTO BASE64 STRINGS FOR REGISTER FILES INTO DATABASE FIELDS
 def blob():
@@ -140,3 +141,4 @@ print('TEST=ai()')
 ai()
 print('TEST=blob()')
 blob()
+
