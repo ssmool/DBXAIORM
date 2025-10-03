@@ -1,17 +1,38 @@
-## HOW TO IMPORT LIBRARY MODDULES FROM DBXAIORM
+### 🧠 DBXAIORM
+ORM Tools for supports severals SGBS and RDBMS with several features like criptografy, migrate, models, data analisys, blob files, migrate and csv for SQLite users.
+
+![DBXAIORM ORM Logo](./assets/pyormxaidatabase_md.png)
+
+**Version:** 4.0 Beta  
+**Status:** Under Development  
+**Author:** #asytrick  
+**Website:** [github.com/ssmool/DBXAIORM](https://github.com/ssmool/DBXAIORM)  
+**Contact:** eusmool@gmail.com  
+
+##📌 Overview
+
+**Python Database DBXAIORM - ORM** is an object-relational mapping (ORM) tool for SQLite focused on simplicity, productivity, and AI integration.  
+This project aims to accelerate relational database development with:
+
+## INSTALL FROM GIT:
+```bash
+git clone https://github.com/ssmool/DBXAIORM.git
+cd DBXAIORM
+echo "DBXAIORM is cloned."  
+
+### HOW TO IMPORT LIBRARY MODDULES FROM DBXAIORM
 ---
-import database_xaiorm.orm as ORM
-import database_xaiorm.orm_ai as AI
-import database_xaiorm.orm_migrate as MIGRATE
-import database_xaiorm.html_log as HTMLOG
-import database_xaiorm.criptografy as CRIPTO
-import database_xaiorm.blob as BLOB
-import database_xaiorm.analitics as ANALYTICS
-import database_xaiorm.mock as MOCK
-import os
----
+**import database_xaiorm.orm_ai as AI**
+**import database_xaiorm.orm_migrate as MIGRATE**
+**import database_xaiorm.html_log as HTMLOG**
+**import database_xaiorm.criptografy as CRIPTO**
+**import database_xaiorm.blob as BLOB**
+**import database_xaiorm.analitics as ANALYTICS**
+**import database_xaiorm.mock as MOCK**
+**import os**
 
 ### BLOB:TO CREATE BLOB DATA INTO BASE64 STRINGS FOR REGISTER FILES INTO DATABASE FIELDS
+```bash
 def blob():
     print('a')
     with open('/home/smoolisky-dotosky/Pictures/44283403-comic-book-speech-bubbles-a-set-of-colourful-and-retro-comic-book-design-elements-with-speech.jpg','rb') as _fx:
@@ -23,24 +44,33 @@ def blob():
     #TO DECODE BASE64 STRING TO DEFAULT TEXT
     _blox_64x0 = BLOB.get_string_64(_blox_64x)
     print(f'_blox={str(_blox)} | _blox_64={_blox_64x} | _blox_64x0={_blox_64x0}')
+```
 
 ### MOCK:TO GENERATE DATA FOR CSV FILES WITH POPULATED VALUES
+
+```bash
 def mock():
     #TO GENERATE DATA FOR CSV FILES WITH POPULATED VALUES (captions,values,range_result) 
     _dx = MOCK.generate_mock_data("val,val_x,val_y,val_z","'v','v',0,0.0",100)
     #TO SAVE MOCK GENERATED TO CSV
     _dx_x = MOCK.save_mock_csv(_dx)
     return _dx
+```
 
 ### AI:TO CREATE MODELS ON /dict for commit new tables by model with AI
+
+```bash
 def ai():
     #define fields by caption separeted by , comma
     prompt = 'uuid_fk, uuid_fr, product, price, units, saled'
     #define your file.db to generated, table name, and use your prompt
     AI.create_prompt('db_0x01.sqlite3','_store',prompt)
     #your model will registered on /dict models with .pyiaorm
+```
 
 ### CRIPTO:TO CRIPTOGRAFY DATA with a automatic generated _key
+
+```bash
 def cripto():
     #automatic generated _key
     _key = CRIPTO.GenerateCriptoKey()
@@ -51,13 +81,19 @@ def cripto():
     #uncriptografy text with generated _key
     _uncrip = CRIPTO.Uncripto(_crip, _key)
     print(str(_uncrip))
+```
 
 ### LOG:READ DATABASE TABLES with ORM and VIEW RESULTS ON WEBVIEW WITH TABLES
+
+```bash
 def log():
     #VIEW TABLE tusers from db_0x01.sqlite3 with filter where by field and WHERE SQL
     HTMLOG.view_log_html("db_0x01.sqlite3", 'tusers', 'false', filter="email LIKE '%sa.com%'")
+```
 
 ### ANALITICS:USE PANDAS DATAFRAME AND MATPLOTLIB TO SELECT DATA FROM TABLE AND VIEW WITH GRAPHICS X,Y AND CHOICE _type="bar"
+
+```bash
 def analitics():
     #orm:open database "db_0x01.sqlite3"
     ORM.dbopen("db_0x01.sqlite3")
@@ -72,8 +108,11 @@ def analitics():
     ANALYTICS.view_table("db_0x01.sqlite3", "tusers", "email LIKE '%sa.com%'", "email", "name", _type="bar")
     #OPEM AMALITYCS WITH SQL SELECT COMMAND with axis graphs x=email and y=name
     ANALYTICS.view_table_with_query("db_0x01.sqlite3", "select * from tusers where name LIKE '%sa%'",'email','name')
+```
 
 ### MIGRATE:TO MIGRATE DATA AND USE CONNECTORS ODBC, RDBMS and CSV - FOR SQLite, MySQL, Postgree, *Commming soon: Oracle, MS SQLServer
+
+```bash
 def migrate():
     _mock_csv = mock()
     print(f'_mock_csv={_mock_csv}')
@@ -84,8 +123,11 @@ def migrate():
     print(f'_mock_csv={_mock_csv}')
     MIGRATE.save_table_csv_path(_mock_csv, "tusers")
     MIGRATE.save_table_csv_to_database("db_0x01.sqlite3", _mock_csv, "tusers")
+```
 
-###INSTALL AND MOUNT NEW DATABASE WITH MODELS WRITED ON /dict with .pyiaorm models 
+### INSTALL AND MOUNT NEW DATABASE WITH MODELS WRITED ON /dict with .pyiaorm models 
+
+```bash
 def _startdb(database):
 	dbcreate(database)
 	dict_src = os.getcwd()
@@ -104,8 +146,11 @@ def _startdb(database):
 			table = tempx.lower()
 			createtable(table, tempx)
 	dbclose()
+```
 
-###ORM:BASIC COMMANDS FOR SUBTIME EFFORTS TO USE DATABASE TABLES OPERATIONS
+### ORM:BASIC COMMANDS FOR SUBTIME EFFORTS TO USE DATABASE TABLES OPERATIONS
+
+```bash
 def dbop(_dbname):
     print('1')
     ORM.dbcreate(_dbname)                     # Create new database
@@ -120,9 +165,11 @@ def dbop(_dbname):
     ORM.delete("tusers", "email='xsa123@sa.com'")                     # Delete with filter
     ORM.writelog("User added", "INSERT", "tusers")  # Log an action
     ORM.dbclose()                                  # Close database
-
+```
+----
 ### TEST BOARD
-## For TEST MODULES IF ALL RIGHT PASS
+** For TEST MODULES IF ALL RIGHT PASS **
+```bash
 print('TEST=_startdb')
 _startdb('db_0x01.sqlite3')
 print('TEST=dbop')
@@ -141,4 +188,5 @@ print('TEST=ai()')
 ai()
 print('TEST=blob()')
 blob()
-
+```
+----
