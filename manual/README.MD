@@ -1,7 +1,7 @@
 ### 🧠 DBXAIORM
 ORM Tools for supports severals SGBS and RDBMS with several features like criptografy, migrate, models, data analisys, blob files, migrate and csv for SQLite users.
 
-![DBXAIORM ORM Logo](./assets/pyormxaidatabase_md.png)
+![DBXAIORM ORM Logo](../assets/pyormxaidatabase_md.png)
 
 **Version:** 4.0 Beta  
 **Status:** Under Development  
@@ -20,7 +20,9 @@ git clone https://github.com/ssmool/DBXAIORM.git
 cd DBXAIORM
 echo "DBXAIORM is cloned."  
 
-### HOW TO IMPORT LIBRARY MODDULES FROM DBXAIORM
+### HOW TO USE ORM DBXAIORM ITS DAMN SIMPLE
+
+## HOW TO IMPORT LIBRARY MODDULES FROM DBXAIORM
 ---
 **import database_xaiorm.orm_ai as AI**
 **import database_xaiorm.orm_migrate as MIGRATE**
@@ -190,3 +192,4 @@ print('TEST=blob()')
 blob()
 ```
 ----
+
