@@ -3,7 +3,7 @@ ORM Tools for supports severals SGBS and RDBMS with several features like cripto
 
 [![GitHub Repo]([[https://github.com/ssmool/DBXAIORM](https://github.com/ssmool/DBXAIORM)])  
 
-![DBXAIORM ORM Logo](./assets/pyormxaidatabase_md.png)
+![DBXAIORM ORM Logo](../assets/pyormxaidatabase_md.png)
 
 **Version:** 4.0 Beta  
 **Status:** Under Development  
