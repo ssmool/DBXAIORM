@@ -14,6 +14,13 @@ ORM Tools for supports severals SGBS and RDBMS with several features like cripto
 **Python Database DBXAIORM - ORM** is an object-relational mapping (ORM) tool for SQLite focused on simplicity, productivity, and AI integration.  
 This project aims to accelerate relational database development with:
 
+## INSTALL FROM GIT:
+```bash
+git clone https://github.com/ssmool/DBXAIORM.git
+cd DBXAIORM
+echo "DBXAIORM is cloned."  
+```
+
 - DATABASE ORM - With Scaffolding Database by DICT/Models.pyiaorm - AI for create pyiaorm models - Files to BLOB Base64 with buffer list - Criptografy - Analitics for View SQL Query Recordset - View SQL Querys LOG in HTML WEBVIEW - OPERATIONS LOG SYSTEM - MOCK Service for automatic bind data information generators - ORM for use SQL Operations with a unique command - Migrate for supports connections and import/export from sqlite, mysql, postgree - odbc - [oracle/ms sqlserver - in progress]  and gui enterprise for develop and deploy your own SGBD Management.
 - ER model installation via dictionary-based files.
 - One-command execution for common database operations.
