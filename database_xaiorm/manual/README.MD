@@ -1,10 +1,6 @@
 ### 🧠 DBXAIORM
 ORM Tools for supports severals SGBS and RDBMS with several features like criptografy, migrate, models, data analisys, blob files, migrate and csv for SQLite users.
 
-[![GitHub Repo]([[https://github.com/ssmool/DBXAIORM](https://github.com/ssmool/DBXAIORM)])  
-
-![DBXAIORM ORM Logo](./assets/pyormxaidatabase_md.png)
-
 **Version:** 4.0 Beta  
 **Status:** Under Development  
 **Author:** #asytrick  
@@ -217,5 +213,6 @@ MIT License
 **[🚀 #asytrick](https://github.com/ssmool) - eusmool@gmail.com** – Building smarter databases with Python 🧠📊
 
 ```
+
 
 
